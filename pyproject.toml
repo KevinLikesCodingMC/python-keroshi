@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keroshi"
+version = "0.0.1"
+authors = [
+	{ name="Keroshi", email="kevinlikescoding@gmail.com" },
+]
+description = "Keroshi Python Package."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+	"Pillow>=9.0.0",
+	"tqdm>=4.60.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
